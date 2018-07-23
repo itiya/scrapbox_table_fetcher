@@ -21,5 +21,9 @@ module ScrapboxTableFetcher
       @table.map{|row| row[column_name]}
     end
 
+    def random_row
+      @table.sample
+    end
+
   end
 end
